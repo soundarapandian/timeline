@@ -1,0 +1,14 @@
+{
+  "name": "Timeline",
+  "description": "Responsive vertical timeline",
+  "version": "0.1.0",
+  "author": "soundar.rathinasamy@gmail.com",
+  "repository": "https://github.com/soundarapandian/timeline.git",
+  "style": "css/timeline.css",
+  "less": "less/timeline.less",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

@@ -1,0 +1,107 @@
+.timeline {
+  position: relative;
+  padding: 50px 0;
+  margin: 0;
+}
+.timeline > .timeline-path {
+  position: absolute;
+  left: 50%;
+  background-color: #cccccc;
+  width: 3px;
+  height: 100%;
+  margin-top: -50px;
+}
+.timeline .timeline-year {
+  padding: 20px 0;
+}
+.timeline .timeline-year > span {
+  background-color: #2c98e8;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 100;
+  position: relative;
+}
+.timeline .event {
+  position: relative;
+  background-color: #333333;
+  padding: 0;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.timeline .event .event-header,
+.timeline .event .event-body,
+.timeline .event .event-footer {
+  margin: 0;
+  padding: 10px;
+}
+.timeline .event .event-header,
+.timeline .event .event-body {
+  border-bottom: 1px solid #1a1a1a;
+}
+.timeline .event .event-body {
+  min-height: 125px;
+}
+.timeline .event .event-body > img {
+  min-width: 100%;
+  max-width: 100%;
+}
+.timeline .event .event-body,
+.timeline .event .event-footer {
+  border-top: 1px solid #595959;
+}
+@media (max-width: 991px) {
+  .timeline .event {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .timeline .event {
+    width: 41.66666666666667%;
+  }
+}
+.timeline .event .event-connector {
+  position: absolute;
+  top: 40px;
+  width: 20%;
+  border-bottom: 1px dotted #cccccc;
+}
+@media (max-width: 991px) {
+  .timeline .event .event-connector {
+    display: none;
+  }
+}
+.timeline .event-left .event {
+  float: left !important;
+}
+.timeline .event-left .event-connector {
+  right: -20%;
+}
+.timeline .event-right .event {
+  float: right !important;
+}
+.timeline .event-right .event-connector {
+  left: -20%;
+}
+.timeline .event-left + .event-left,
+.timeline .event-right + .event-right {
+  margin-top: 40px;
+}
+@media (max-width: 991px) {
+  .timeline .event-left + .event-right,
+  .timeline .event-right + .event-left {
+    margin-top: 40px;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
