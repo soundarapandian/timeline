@@ -7,12 +7,20 @@
 
 @timeline-year-bg:                                #2c98e8;
 @timeline-year-color:                             #fff;
+@timeline-year-border-color:                      lighten(@timeline-year-bg, 10%);
 
 @timeline-event-bg:                               #333;
 @timeline-event-color:                            #fff;
 @timeline-event-border-thick-color:               darken(@timeline-event-bg, 10%);
 @timeline-event-border-light-color:               lighten(@timeline-event-bg, 15%);
 
+// View port variables
+// Copied from Bootstrap
 
-@screen-small-max:                                991px;
-@screen-medium-min:                               (@screen-small-max + 1);
+@screen-xs-min:              480px;
+@screen-sm-min:              768px;
+@screen-md-min:              992px;
+@screen-lg-min:              1200px;
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
