@@ -3,7 +3,8 @@ module.exports = function(grunt) {
     less: {
       development: {
         files: {
-          "css/timeline.css": "less/timeline.less"
+          "css/timeline.css": "less/timeline.less",
+          "demo/css/timeline.css": "less/timeline.less",
         }
       }
     },
