@@ -33,7 +33,7 @@
   border-bottom: 12px solid transparent;
 }
 .timeline .event-left .event {
-  float: left !important;
+  float: left;
   margin-left: 10%;
 }
 .timeline .event-left .event-connector {
@@ -41,7 +41,7 @@
   border-left: 14px solid #333333;
 }
 .timeline .event-right .event {
-  float: right !important;
+  float: right;
   margin-right: 10%;
 }
 .timeline .event-right .event-connector {
@@ -52,35 +52,33 @@
 .timeline .event-right + .event-right {
   margin-top: 40px;
 }
-@media (max-width: 991px) {
-  .timeline .timeline-path {
-    left: 48px;
+@media (max-width: 767px) {
+  .timeline .event {
+    width: 304px;
   }
+}
+@media (max-width: 991px) {
   .timeline .timeline-year {
-    text-align: left;
+    margin: 10px 0;
   }
   .timeline .timeline-year > span {
     padding: 20px;
   }
   .timeline .event-right .event,
   .timeline .event-left .event {
-    float: none !important;
-  }
-  .timeline .event-right .event-connector,
-  .timeline .event-left .event-connector {
-    left: -30px;
-    width: 30px;
-  }
-  .timeline .event-left .event-connector {
-    right: 0;
-  }
-  .timeline .event-left,
-  .timeline .event-right {
-    margin-left: 80px;
+    float: none;
   }
   .timeline .event-left + .event-right,
   .timeline .event-right + .event-left {
     margin-top: 40px;
+  }
+  .timeline .event-left .event,
+  .timeline .event-right .event {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .timeline .event-connector {
+    display: none;
   }
 }
 .event {
@@ -108,7 +106,6 @@
   min-height: 125px;
 }
 .event .event-body > img {
-  min-width: 100%;
   max-width: 100%;
 }
 .event .event-body,
