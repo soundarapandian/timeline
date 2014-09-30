@@ -32,17 +32,24 @@
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
 }
+.timeline .event-left,
+.timeline .event-right {
+  width: 50%;
+}
 .timeline .event-left .event {
-  float: left;
-  margin-left: 10%;
+  float: right;
+  margin-right: 30px;
 }
 .timeline .event-left .event-connector {
   right: -14px;
   border-left: 14px solid #333333;
 }
+.timeline .event-right {
+  margin-left: 50%;
+}
 .timeline .event-right .event {
-  float: right;
-  margin-right: 10%;
+  float: left;
+  margin-left: 30px;
 }
 .timeline .event-right .event-connector {
   left: -14px;
@@ -63,6 +70,13 @@
   }
   .timeline .timeline-year > span {
     padding: 20px;
+  }
+  .timeline .event-right {
+    margin-left: 0;
+  }
+  .timeline .event-right,
+  .timeline .event-left {
+    width: 100%;
   }
   .timeline .event-right .event,
   .timeline .event-left .event {

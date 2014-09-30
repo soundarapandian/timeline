@@ -42,10 +42,15 @@
     border-bottom: 12px solid transparent;
   }
 
+  .event-left,
+  .event-right {
+    width: 50%;
+  }
+
   .event-left {
     .event {
-      float: left;
-      margin-left: 10%;
+      float: right;
+      margin-right: 30px;
     }
 
     .event-connector {
@@ -55,9 +60,11 @@
   }
 
   .event-right {
+    margin-left: 50%;
+
     .event {
-      float: right;
-      margin-right: 10%;
+      float: left;
+      margin-left: 30px;
     }
 
     .event-connector {
@@ -86,8 +93,14 @@
       }
     }
 
+    .event-right {
+      margin-left: 0;
+    }
+
     .event-right,
     .event-left {
+      width: 100%;
+
       .event {
         float: none;
       }
