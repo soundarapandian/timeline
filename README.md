@@ -2,6 +2,10 @@ Timeline
 ========
   A responsive vertical timeline utility.
 
+Preview
+-------
+![Timeline preview](https://github.com/soundarapandian/timeline/blob/master/images/timeline-preview.png)
+
 History
 -------
   I was looking for a community maintained responsive vertical timeline design.
