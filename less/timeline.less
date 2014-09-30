@@ -11,7 +11,7 @@
 
   > .timeline-path {
     position: absolute;
-    left: 50%;
+    left: 49.8%;
     background-color: @timeline-path-bg;
     width: 3px;
     height: 100%;
@@ -35,28 +35,34 @@
 
   .event-connector {
     position: absolute;
-    top: 40px;
-    width: 20%;
-    border-bottom: 1px dotted @timeline-connector-color;
+    top: 52px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
   }
 
   .event-left {
     .event {
       float: left !important;
+      margin-left: 10%;
     }
 
     .event-connector {
-      right: -20%;
+      right: -14px;
+      border-left: 14px solid @timeline-event-bg;
     }
   }
 
   .event-right {
     .event {
       float: right !important;
+      margin-right: 10%;
     }
 
     .event-connector {
-      left: -20%;
+      left: -14px;
+      border-right: 14px solid @timeline-event-bg;
     }
   }
 

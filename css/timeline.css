@@ -5,7 +5,7 @@
 }
 .timeline > .timeline-path {
   position: absolute;
-  left: 50%;
+  left: 49.8%;
   background-color: #cccccc;
   width: 3px;
   height: 100%;
@@ -26,21 +26,27 @@
 }
 .timeline .event-connector {
   position: absolute;
-  top: 40px;
-  width: 20%;
-  border-bottom: 1px dotted #cccccc;
+  top: 52px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
 }
 .timeline .event-left .event {
   float: left !important;
+  margin-left: 10%;
 }
 .timeline .event-left .event-connector {
-  right: -20%;
+  right: -14px;
+  border-left: 14px solid #333333;
 }
 .timeline .event-right .event {
   float: right !important;
+  margin-right: 10%;
 }
 .timeline .event-right .event-connector {
-  left: -20%;
+  left: -14px;
+  border-right: 14px solid #333333;
 }
 .timeline .event-left + .event-left,
 .timeline .event-right + .event-right {
