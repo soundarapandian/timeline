@@ -4,17 +4,11 @@ Timeline
 
 Preview
 -------
-![Timeline preview](https://github.com/soundarapandian/timeline/blob/master/images/timeline-preview.png)
-
-History
--------
-  I was looking for a community maintained responsive vertical timeline design.
-  But most of the designs I found are like code snippets and Gist. So I planned
-  to write my own design.
+![Timeline preview](https://github.com/soundarapandian/timeline/blob/master/demo/images/timeline-preview.png)
 
 Contributing
 ------------
-  Patch requests are welcome if you have awesome ideas.
+  Patches are welcome!
 
 License
 --------
